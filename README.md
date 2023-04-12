@@ -42,11 +42,11 @@ JWT的優點之一是可攜性，因為它可以在不同的系統之間傳遞�
 > 這就是為什麼不要在JWT的Payload上帶上敏感資料的原因.
 
 - JWT 解決的是簽証(sign)安全，不是傳輸全安全，要配合加密通道(ex: https)才能安全地傳遞 JWT.
-> // 回應 client ，把 token 存在名為 token 的 cookie 並設定相關屬性.
-> res.cookie('token', token, { maxAge: EXPIRES_IN, httpOnly: true});
 
-- JWT Token 可以存在 client cookie 中，並設定 httpOnly(Cookie只能被伺服端存取，client 無法用 javascript 讀取)、<br>
-  secure(只能透過https的方式傳輸)
+- JWT Token 可以存在 client cookie 中，並設定 httpOnly(Cookie只能被伺服端存取，<br>
+  client 無法用 javascript 讀取)、secure(只能透過https的方式傳輸)<br>
+> // 回應 client ，把 token 存在名為 token 的 cookie 並設定相關屬性.<br>
+> res.cookie('token', token, { maxAge: EXPIRES_IN, httpOnly: true});
 
 - JWT Payload由一些Claim組成，這些Claim描述了JWT所攜帶的資訊，常見的Claim包括：
   - iss (Issuer)：JWT的發行者
