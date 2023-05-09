@@ -1,11 +1,12 @@
 # ![](https://drive.google.com/uc?id=10INx5_pkhMcYRdx_OO4rXNXxcsvPtBYq) NodeJs - jwt
 > ##### 理論請自行找，網路上有很多相關的文章，這邊只關注於範例實作的部分.
 
-<br>
+---
 
 <!--ts-->
-## 目錄
+## 目錄:
 * [簡介](#簡介)
+* [實作範例](#實作範例)
 * [使用套件](#使用套件)
 * [操作說明](#操作說明)
 * [切換範例](#切換範例)
@@ -15,9 +16,8 @@
 <!--te-->
 
 ---
-<br>
 
-## 簡介
+## 簡介:
 JWT（JSON Web Tokens）是一種用於認證和授權的開放標準，它使用JSON格式來傳遞安全憑證。<br>
 一個JWT通常由三部分組成：標頭(Header).內容(Payload).簽名(Signature)<br>
 - Header    通常指定使用的加密算法。<br>
@@ -57,53 +57,51 @@ JWT的優點之一是可攜性，因為它可以在不同的系統之間傳遞�
   - iat (Issued At)：JWT的發行時間
   - jti (JWT ID)：JWT的唯一識別碼
 
-<br>
+---
 
-實作範例:
+## 實作範例:
 - [Example1](https://github.com/RC-Dev-Tech/nodejs-jwt/blob/main/src/examples/example1.ts) - JWT基本使用.
 - [Example2](https://github.com/RC-Dev-Tech/nodejs-jwt/blob/main/src/examples/example2.ts) - JWT簡易驗證應用.
 
 ---
-<br>
 
-## 使用套件.
+## 使用套件:
 - express
 - jsonwebtoken
 
 ---
-<br>
 
-## 操作說明.
+## 操作說明:
 #### 1. 安裝套件[^1]
 > npm install --save
 #### 2. 編譯 & 運行
 > npm run start
 
 ---
-<br>
 
-## 切換範例
+## 切換範例:
 > 編輯在app.json中的"exsample_mode"，填入的數字代表第幾個範例.
 
 ---
-<br>
 
-## 延伸項目
+## 延伸項目:
 * [NodeJs 系列實作](https://github.com/RC-Dev-Tech/nodejs-index) <br>
 
 ---
-<br>
 
-## 參考資料
+## 參考資料:
 * [帳密認証與JWT (JSON Web Token)傳遞](https://ithelp.ithome.com.tw/articles/10203292) <br>
 * [透過 JWT 實作驗證機制](https://medium.com/%E9%BA%A5%E5%85%8B%E7%9A%84%E5%8D%8A%E8%B7%AF%E5%87%BA%E5%AE%B6%E7%AD%86%E8%A8%98/%E7%AD%86%E8%A8%98-%E9%80%8F%E9%81%8E-jwt-%E5%AF%A6%E4%BD%9C%E9%A9%97%E8%AD%89%E6%A9%9F%E5%88%B6-2e64d72594f8) <br>
 * [JSON Web Token (JWT) — 使用 Node.js 的正確實現方式](https://medium.com/%E9%BA%A5%E5%85%8B%E7%9A%84%E5%8D%8A%E8%B7%AF%E5%87%BA%E5%AE%B6%E7%AD%86%E8%A8%98/%E7%AD%86%E8%A8%98-%E9%80%8F%E9%81%8E-passport-js-%E5%AF%A6%E4%BD%9C%E9%A9%97%E8%AD%89%E6%A9%9F%E5%88%B6-11cf478f421e) <br>
 
 ---
+
 <!--ts-->
 #### [目錄 ↩](#目錄)
 <!--te-->
+
 ---
+
 ## 備註：
 [^1]: 在這個範例中我們需要安裝部分套件，指令如下：<br>
 `npm install express --save` <br>
